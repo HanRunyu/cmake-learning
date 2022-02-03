@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.16)
 
 project(hello_headers)
 
@@ -9,4 +9,4 @@ aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LIST)
 
 add_executable(hello_headers ${SRC_LIST})
 
-target_include_directories(hello_headers PRIVATE ${PROJECT_SOURCE_DIR}/inc)
+target_include_directories(hello_headers PUBLIC ${PROJECT_SOURCE_DIR}/inc)

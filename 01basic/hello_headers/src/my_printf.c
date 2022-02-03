@@ -3,12 +3,12 @@
 
 int my_printf(const char *format, ...)
 {
+    int rlt = 0;
     va_list args;
+
     va_start(args, format);
-
-    vprintf(format, args);
-
+    rlt = vprintf(format, args);
     va_end(args);
 
-    return 0;
+    return rlt;
 }
