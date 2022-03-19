@@ -1,0 +1,6 @@
+#ifndef __NAIN_H__
+#define __NAIN_H__
+
+#define FILE_AUTHOR "${FILE_AUTHOR}"
+
+#endif
